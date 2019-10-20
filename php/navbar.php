@@ -18,7 +18,7 @@
 <div class="nav-scroller py-1 mb-2">
   <nav class="nav d-flex justify-content-between">
     <a class="p-2 text-muted" href="index.php">Home</a>
-    <a class="p-2 text-muted" href="information_querier.php">Querier</a>
+    <a class="p-2 text-muted" href="enquirer.php">Querier</a>
     <a class="p-2 text-muted" href="aboutUs.php">About US</a>
     <a class="p-2 text-muted" href="login.php">Login</a>
     <a class="p-2 text-muted" href="info.php">Info</a>

@@ -1,0 +1,42 @@
+#wrapper{
+  padding-top: 4vh;
+  height: 65vh;
+}
+
+#query-with-text {
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+#query-with-qr-code{
+  text-align: center;
+  width: 20vw;
+  /* Important */
+  margin: 7vh 40vw 7vh 40vw;
+}
+
+
+.index-form-elements{
+  height: 45px;
+  border-radius: 0;
+  width: 50vw;
+  /* Important */
+  margin: 0 0 0 20vw;
+}
+
+.textSearch{
+  height: 45px;
+  width: 10vw;
+  border-radius: 0;
+}
+
+hr{
+  width: 70vw;
+}
+
+.qrCodeSearch{
+  height: 45px;
+  border-radius: 0;
+}
