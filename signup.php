@@ -59,6 +59,7 @@
               <br>
               <select class="form-control" name="supply_chain_role" type="text" id="supply_chain_role" class="" placeholder="Supply Chain Role" value="Ghana" required>
                 <option selected>Select Your Role</option>
+                <option value="Customer">Customer</option>
                 <option value="Grower">Grower</option>
                 <option value="Produce Packer">Produce Packer</option>
                 <option value="Distributor/Trader">Distributor/Trader</option>

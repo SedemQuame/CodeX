@@ -19,7 +19,7 @@
      $_SESSION['user_id'] = $result['user_id'];
    }
    $msg = "Login Successful";
-   header('location: ../information_querier.php?msg='.$msg);
+   header('location: ../enquirer.php?msg='.$msg);
  } else {
    $msg = "Login Unsuccessful";
    header('location: login.php?msg='.$msg);

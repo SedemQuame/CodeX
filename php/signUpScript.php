@@ -54,5 +54,5 @@
 
 
   // Redirect user to new page.
-  header('location: ../information_querier.php?msg='.$msg);
+  header('location: ../enquirer.php?msg='.$msg);
 ?>
