@@ -16,12 +16,12 @@
     on the food supply chain.
   </p>
   <div class="row">
-    <form action="" method="post" enctype="" class="col-9 col-md-6 col-lg-3">
+    <form action="php/loginScript.php" method="post" enctype="" class="col-9 col-md-6 col-lg-3">
       <!--This is the login page.-->
       <div>
           <label for="email_address">Email Address</label>
           <br>
-          <input class="form-control" name="email" type="text" id="email_address" placeholder="Email Address" required>
+          <input class="form-control" name="emailAddress" type="text" id="email_address" placeholder="Email Address" required>
       </div>
 
       <div>

@@ -16,9 +16,8 @@
     on the food supply chain.
   </p>
     <div class="row">
-      <form action="" method="post" enctype="" class="col-9 col-md-6 col-lg-3">
+      <form action="php/signUpScript.php" method="post" enctype="" class="col-9 col-md-6 col-lg-3">
         <!-- Personal Information -->
-        <br>
           <p>Personal Information</p>
           <hr>
           <div>
@@ -56,6 +55,20 @@
           </div>
 
           <div>
+              <label for="supply_chain_role">Role</label>
+              <br>
+              <select class="form-control" name="supply_chain_role" type="text" id="supply_chain_role" class="" placeholder="Supply Chain Role" value="Ghana" required>
+                <option selected>Select Your Role</option>
+                <option value="Grower">Grower</option>
+                <option value="Produce Packer">Produce Packer</option>
+                <option value="Distributor/Trader">Distributor/Trader</option>
+                <option value="Manufacturer/Processor">Manufacturer/Processor</option>
+                <option value="Retail Store">Retail Store</option>
+                <option value="Food Service Operator">Food Service Operator</option>
+              </select>
+          </div>
+
+          <div>
               <label for="users_country">Country</label>
               <br>
               <input class="form-control" name="users_country" type="text" id="users_country" class="" placeholder="Country" required>
@@ -64,7 +77,31 @@
           <div>
               <label for="users_region">Region</label>
               <br>
-              <input class="form-control" name="users_region" type="text" id="users_region" class="" placeholder="region" required>
+              <select class="form-control" name="users_region" type="text" id="users_region" class="" placeholder="region" required>
+                <option selected>Select Your Region</option>
+                <option value="Oti">Oti Region</option>
+                <option value="Bono East">Bono East Region</option>
+                <option value="Ahafo">Ahafo Region</option>
+                <option value="Bono">Bono Region</option>
+                <option value="North East">North East Region</option>
+                <option value="Savannah">Savannah Region</option>
+                <option value="North West">Western North Region</option>
+                <option value="Western">Western Region</option>
+                <option value="Volta">Volta Region</option>
+                <option value="Greater Accra">Greater Accra Region</option>
+                <option value="Eastern">Eastern Region</option>
+                <option value="Ashanti">Ashanti Region</option>
+                <option value="Central">Central Region</option>
+                <option value="Northern Accra">Northen Accra Region</option>
+                <option value="Upper East">Upper East Region</option>
+                <option value="=Upper West">Upper West Region</option>
+              </select>
+          </div>
+
+          <div>
+              <label for="digital_address">Digital Address</label>
+              <br>
+              <input class="form-control" name="digital_address" type="text" id="digital_address" class="" placeholder="digital address" required>
           </div>
 
           <!-- Account Credentials  -->
