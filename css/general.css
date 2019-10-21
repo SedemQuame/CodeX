@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed&display=swap');
+
+.codex-header{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 48px;
+}
+
+.header{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 41px;
+}
+
+.sub-header{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+}
+
+.form-sub-section{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}

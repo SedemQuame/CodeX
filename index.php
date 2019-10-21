@@ -20,44 +20,42 @@
     </div>
   </div>
 
-  <p class="text-center">Hackathon Project.</p>
-
-  <div class="row">
-    <div class="col-md-6">
-       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-         <div class="col p-4 d-flex flex-column position-static">
-           <strong class="d-inline-block mb-2 text-primary">World</strong>
-           <h3 class="mb-0">Featured post</h3>
-           <div class="mb-1 text-muted">Nov 12</div>
-           <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-           <a href="#" class="stretched-link">Continue reading</a>
-         </div>
-         <div class="col-auto d-none d-lg-block">
-           <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+         <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+           <div class="col p-4 d-flex flex-column position-static">
+             <strong class="d-inline-block mb-2 text-primary">World</strong>
+             <h3 class="mb-0">Featured post</h3>
+             <div class="mb-1 text-muted">Nov 12</div>
+             <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+             <a href="#" class="stretched-link">Continue reading</a>
+           </div>
+           <div class="col-auto d-none d-lg-block">
+             <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+           </div>
          </div>
        </div>
-     </div>
 
-     <div class="col-md-6">
-        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">World</strong>
-            <h3 class="mb-0">Featured post</h3>
-            <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+       <div class="col-md-6">
+          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">World</strong>
+              <h3 class="mb-0">Featured post</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            </div>
           </div>
         </div>
-      </div>
-  </div>
+    </div>
 
-  <div class="">
-    <p class="text-center">Codex Helps You</p>
-    <p class="text-center">Save Time And Money</p>
-    <p class="text-center">
+    <p class="text-center header">Codex Helps You</p>
+    <p class="text-center sub-header">Save Time And Money</p>
+    <p class="text-center paragraph">
       Cut the time it takes you to manage your suppliers in half and
       gain full visibility into the safety and quality issues across your supply chain.
       Reduce the impact of FSMA and food recalls while better addressing

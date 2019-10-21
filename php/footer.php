@@ -1,19 +1,17 @@
 <footer class="row">
-<!--        This div will act as the footer.-->
-    <!-- <p class="text-center">footer</p> -->
     <div class="col-12 col-sm-6 col-md-4 ">
-      <h6 class="footer-section-header text-center">About Us</h6>
+      <h4 class="form-sub-section text-center">About Us</h4>
 
       <ul>
-        <li class=""> <a href="#">About</a> <sitename> </li>
-        <li class=""> <a href="#">Carrers</a> </li>
+        <li class="text-center"> <a href="#">About</a> <sitename> </li>
+        <li class="text-center"> <a href="#">Carrers</a> </li>
       </ul>
     </div>
 
     <div class="col-12 col-sm-6 col-md-4 ">
-      <h6 class="footer-section-header text-center"> Contact Us </h6>
+      <h4 class="form-sub-section text-center"> Contact Us </h4>
       <ul>
-        <li class="">
+        <li class="text-center">
           <address>
               Codex<br>
               Number:(+233546744163)<br>
@@ -21,7 +19,7 @@
               Ghana
           </address>
         </li>
-        <li class="">
+        <li class="text-center">
           Social Media
           <ul class="list-inline">
             <li class="list-inline-item">
@@ -46,11 +44,11 @@
 
 
     <div class="col-12 col-sm-6 col-md-4 ">
-      <h6 class="footer-section-header text-center"> Resources </h6>
+      <h4 class="form-sub-section text-center"> Resources </h4>
 
       <ul>
-        <li class=""> <a href="#">Help</a> </li>
-        <li class=""> <a href="#">Returns</a>  </li>
+        <li class="text-center"> <a href="#">Help</a> </li>
+        <li class="text-center"> <a href="#">Returns</a>  </li>
       </ul>
     </div>
 

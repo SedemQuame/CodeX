@@ -11,14 +11,18 @@
   <?php include_once 'php/navbar.php'; ?>
 
   <div id="wrapper">
-    <p class="text-center">
+    <p class="text-center header">
       Get up to the minute, information
-      <br>
+    </p>
+
+    <p class="text-center sub-header">
       on the food supply chain.
     </p>
     <div class="row">
-      <form action="php/loginScript.php" method="post" enctype="" class="col-9 col-md-6 col-lg-3">
+      <form action="php/loginScript.php" method="post" enctype="" class="col-md-6 col-lg-5">
         <!--This is the login page.-->
+        <p class="form-sub-section">Login Credentials</p>
+        <hr>
         <div>
             <label for="email_address">Email Address</label>
             <br>

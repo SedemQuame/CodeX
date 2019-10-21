@@ -11,7 +11,7 @@
   <?php include_once 'php/navbar.php'; ?>
 
   <div id="wrapper">
-    <p>Information to be added here.</p>
+    <p class="header text-center">Information to be added here ...</p>
   </div>
 
 

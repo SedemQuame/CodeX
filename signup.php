@@ -10,43 +10,50 @@
 <body>
   <?php include_once 'php/navbar.php'; ?>
 
-  <p class="text-center">
-    Get up to the minute, information
-    <br>
-    on the food supply chain.
+  <p class="text-center header">
+    Are you, food concious?
+  </p>
+
+  <p class="text-center sub-header">
+    Sign Up To Get Data Concerning The Food You Eat.
   </p>
     <div class="row">
-      <form action="php/signUpScript.php" method="post" enctype="" class="col-9 col-md-6 col-lg-3">
-        <!-- Personal Information -->
-          <p>Personal Information</p>
-          <hr>
-          <div>
-              <label for="first_name">First Name</label>
-              <br>
-              <input class="form-control" name="first_name" type="text" id="first_name" class="" placeholder="First Name" required>
-          </div>
+      <form  class="col-8 col-md-6 col-lg-5" action="php/signUpScript.php" method="post" enctype="">
 
-          <div>
-              <label for="last_name">Last Name</label>
-              <br>
-              <input class="form-control" name="last_name" type="text" id="last_name" class="" placeholder="Last name" required>
-          </div>
+        <div>
+          <!-- Personal Information -->
+            <p class="form-sub-section">Personal Information</p>
+            <hr>
+            <div>
+                <label for="first_name">First Name</label>
+                <br>
+                <input class="form-control" name="first_name" type="text" id="first_name" class="" placeholder="First Name" required>
+            </div>
 
-          <div>
-              <label for="email_address">Email Address</label>
-              <br>
-              <input class="form-control" name="email_address" type="text" id="email_address" class="" placeholder="Email Address" required>
-          </div>
+            <div>
+                <label for="last_name">Last Name</label>
+                <br>
+                <input class="form-control" name="last_name" type="text" id="last_name" class="" placeholder="Last name" required>
+            </div>
 
-          <div>
-              <label for="phone_number">Phone number</label>
-              <br>
-              <input class="form-control" name="phone_number" type="tel" id="phone_number" class="" placeholder="Phone Number" required>
-          </div>
+            <div>
+                <label for="email_address">Email Address</label>
+                <br>
+                <input class="form-control" name="email_address" type="text" id="email_address" class="" placeholder="Email Address" required>
+            </div>
 
+            <div>
+                <label for="phone_number">Phone number</label>
+                <br>
+                <input class="form-control" name="phone_number" type="tel" id="phone_number" class="" placeholder="Phone Number" required>
+            </div>
+
+        </div>
+
+        <div>
           <!-- Business Information -->
           <br>
-          <p>Business Information</p>
+          <p class="form-sub-section">Business Information</p>
           <hr>
           <div>
               <label for="business_bin">B.I.N</label>
@@ -105,9 +112,12 @@
               <input class="form-control" name="digital_address" type="text" id="digital_address" class="" placeholder="digital address" required>
           </div>
 
+        </div>
+
+        <div>
           <!-- Account Credentials  -->
           <br>
-          <p>Account Credentials</p>
+          <p class="form-sub-section">Account Credentials</p>
           <hr>
           <div>
               <label for="user_password">Password</label>
@@ -124,14 +134,15 @@
           <div>
               <input id="form-submit-btn" class="btn btn-block" name="submit" type="submit" id="submit_btn" class="" value="Submit">
           </div>
+        </div>
 
-          <hr>
+        <hr>
 
-          <p class="text-center">
-            Already a registered user?
-            <br>
-            <a href="login.php">Log In</a>
-          </p>
+        <p class="text-center">
+          Already a registered user?
+          <br>
+          <a href="login.php">Log In</a>
+        </p>
 
       </form>
 

@@ -11,18 +11,15 @@
   <?php include_once 'php/navbar.php'; ?>
 
 <div id="wrapper">
-  <p class="text-center">
+  <p class="text-center header">
     Query Supply Chain Information By
-    <br>
+  </p>
+  <p class="text-center sub-header">
     Using Provided Special String
-    <br>
-    OR
-    <br>
-    Scanning the provided QR Code.
   </p>
 
   <div id="query-with-text">
-    <form class="searchForm row" action="../enquirer.php" method="post">
+    <form class="searchForm row" action="php/productInfo.php" method="post">
       <label for="get-user-email">
         <input class="form-control index-form-elements " name="emailAddress" type="text" id="get-user-email" placeholder="Special String" required>
       </label>
@@ -30,7 +27,15 @@
     </form>
   </div>
 
+  <p class="text-center">OR</p>
   <hr>
+
+  <p class="text-center header">
+    Query Supply Chain Information By
+  </p>
+  <p class="text-center sub-header">
+    Scanning A QR Code
+  </p>
 
   <div id="query-with-qr-code">
     <a class="btn btn-primary btn-success qrCodeSearch btn-block" href="#" role="button">Scan QR Code</a>
