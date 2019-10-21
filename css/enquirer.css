@@ -1,6 +1,6 @@
 #wrapper{
   padding-top: 4vh;
-  height: 65vh;
+  height: 75vh;
 }
 
 #query-with-text {
@@ -14,7 +14,7 @@
   text-align: center;
   width: 20vw;
   /* Important */
-  margin: 7vh 40vw 7vh 40vw;
+  margin: 2vh 40vw 7vh 40vw;
 }
 
 

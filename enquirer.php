@@ -38,7 +38,12 @@
   </p>
 
   <div id="query-with-qr-code">
-    <a class="btn btn-primary btn-success qrCodeSearch btn-block" href="#" role="button">Scan QR Code</a>
+    <form enctype="multipart/form-data" action="php/qr_script.php" method="POST">
+      <label for="">Choose QR code image to read/scan:</label>
+      <br>
+      <input name="file" type="file" />
+      <input class="btn btn-primary btn-success qrCodeSearch btn-block" name="submit" type="submit" value="Scan QR Code">
+    </form>
   </div>
 
 </div>
