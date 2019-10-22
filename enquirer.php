@@ -19,9 +19,9 @@
   </p>
 
   <div id="query-with-text">
-    <form class="searchForm row" action="php/productInfo.php" method="post">
-      <label for="get-user-email">
-        <input class="form-control index-form-elements " name="emailAddress" type="text" id="get-user-email" placeholder="Special String" required>
+    <form class="searchForm row" action="php/query_with_text.php" method="post">
+      <label for="qr_text_field">
+        <input class="form-control index-form-elements " name="qr_text" type="text" id="qr_text_field" placeholder="Special String" required>
       </label>
       <input class="textSearch btn btn-success" name="submit" type="submit" value="Submit">
     </form>
@@ -42,6 +42,7 @@
       <label for="">Choose QR code image to read/scan:</label>
       <br>
       <input name="file" type="file" />
+      <br>
       <input class="btn btn-primary btn-success qrCodeSearch btn-block" name="submit" type="submit" value="Scan QR Code">
     </form>
   </div>

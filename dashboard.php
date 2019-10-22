@@ -45,7 +45,7 @@
           <img id="img_element" src="holder.js/300x200" alt="">
         </div>
 
-        <form id="addItem" action="" method="post" enctype="multipart/form-data">
+        <form id="addItem" action="php/addEntry.php" method="post" enctype="multipart/form-data">
           <div class="">
             <label for="">Item Name </label>
             <input class="form-control" type="text" id="" name="item_name" required>
