@@ -1,0 +1,30 @@
+.panes{
+  min-height: 80vh;
+}
+
+#NavPane{
+
+}
+
+#displayPane{
+
+}
+
+.list-group-item{
+  border: 0;
+}
+
+li{
+  text-align: left;
+}
+
+li a{
+  color: black;
+}
+
+#addItem{
+  width: 100%;
+  padding: 0 20%;
+  margin-bottom: 2%;
+  margin-top: -2%;
+}
