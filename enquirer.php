@@ -19,7 +19,7 @@
   </p>
 
   <div id="query-with-text">
-    <form class="searchForm row" action="php/query_with_text.php" method="post">
+    <form class="searchForm row" action="info.php" method="post">
       <label for="qr_text_field">
         <input class="form-control index-form-elements " name="qr_text" type="text" id="qr_text_field" placeholder="Special String" required>
       </label>
