@@ -13,4 +13,5 @@
 
 
   // echo ($decoded->body[0]->symbol[0]->data);
+  header("location: ../info.php");
 ?>

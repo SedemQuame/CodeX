@@ -10,31 +10,7 @@
     <!-- Prototype of the user's page. -->
 
     <div class="row">
-      <div id="NavPane" class="col-2 panes">
-        <div class="">
-          <p>User information</p>
-          <ul>
-            <?php // TODO: Add user image if possible ?>
-            <li class="text-left">User name</li>
-            <li class="text-left">User Role</li>
-            <li class="text-left">Email</li>
-            <li class="text-left">Phone Number</li>
-          </ul>
-        </div>
-
-
-        <ul class="list-group">
-          <li class="list-group-item">
-            <a href="dashboard.php">Home</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">Connections</a>
-          </li>
-          <li class="list-group-item">
-            <a href="#">Products</a>
-          </li>
-        </ul>
-      </div>
+      <?php include 'php/dashboard_nav.php'; ?>
 
       <div id="displayPane" class="col-10 panes">
         <p class="text-center sub-header">
@@ -60,13 +36,13 @@
             <label for="">Item Type </label>
             <select class="custom-select" id="" name="item_type" required>
               <option selected>Open this select menu</option>
-              <option value="tops">Vegetables</option>
-              <option value="shoes">Fruit</option>
-              <option value="bags">Grain, Beans and Nut</option>
-              <option value="accessories">Meat and Poultry</option>
-              <option value="accessories">Fish and Seafood</option>
-              <option value="accessories">Diary Food</option>
-              <option value="accessories">Processed Food</option>
+              <option value="Vegetables">Vegetables</option>
+              <option value="Fruit">Fruit</option>
+              <option value="Grain, Beans and Nuts">Grain, Beans and Nut</option>
+              <option value="Meat and Poultry">Meat and Poultry</option>
+              <option value="Fish and Seafood">Fish and Seafood</option>
+              <option value="Diary Food">Diary Food</option>
+              <option value="Processed Food">Processed Food</option>
             </select>
           </div>
 

@@ -13,9 +13,6 @@ try{
 }catch(PDOException $e){
   /* NOTE: $e isn't a string but rather an object.*/
   $error = $e->getMessage();
-  $output = 'Database connection failed. \nError mEssage: '. $error;
+  $output = 'Database connection failed. <br /> Please try again in a minute.';
 }
-
-// echo $output;
-
 ?>
