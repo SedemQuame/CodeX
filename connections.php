@@ -19,13 +19,24 @@
         <form id="addItem" action="php/addUser.php" method="post" enctype="multipart/form-data">
           <div class="">
             <label for="">User Bin</label>
-            <input class="form-control" type="text" =name="userBin" required>
+            <input class="form-control" type="text" name="userBin" required>
           </div>
 
           <div class="">
+            <label for="">Product</label>
+            <select class="custom-select" id="" name="product" required>
+              <option selected>Select Product</option>
+              <option value="Item #1">Item #1</option>
+              <option value="Item #2">Item #2</option>
+              <option value="Item #3">Item #3</option>
+              <option value="Item #4">Item #4</option>
+            </select>
+          </div>
+
+          <!-- <div class="">
             <label for="">Role</label>
-            <select class="custom-select" id="" name="item_type" required>
-              <option selected>Open this select menu</option>
+            <select class="custom-select" id="" name="userRole" required>
+              <option selected>Select User's Role</option>
               <option value="Grower">Grower</option>
               <option value="Produce Packer/Re-packer">Produce Packer/Re-packer</option>
               <option value="Distributor/Trader">Distributor/Trader</option>
@@ -33,11 +44,12 @@
               <option value="Retail Store">Retail Store</option>
               <option value="Food Service Operator">Food Service Operator</option>
             </select>
-          </div>
+          </div> -->
 
           <br>
           <div class="">
-            <input class="btn btn-outline-secondary btn-block" type="submit" name="submit" value="Add User">
+            <input class="btn btn-outline-secondary btn-block" type="submit"
+             name="submit" value="Add User To The Supply Chain">
           </div>
         </form>
       </div>
