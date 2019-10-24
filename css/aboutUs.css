@@ -1,4 +1,14 @@
 #wrapper{
   padding-top: 4vh;
-  height: 65vh;
+  min-height: 65vh;
+}
+
+.team{
+  width: 70%;
+  margin: 0 15%;
+  height: px;
+}
+
+.holders{
+  margin-bottom: 25px;
 }

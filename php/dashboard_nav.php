@@ -19,7 +19,7 @@
       <a href="connections.php">Connections</a>
     </li>
     <li class="list-group-item">
-      <a href="#">Products</a>
+      <a href="products.php">Products</a>
     </li>
   </ul>
 </div>
