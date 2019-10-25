@@ -48,10 +48,15 @@
     <form enctype="multipart/form-data" action="php/qr_script.php" method="POST">
       <label for="">Choose QR code image to read/scan:</label>
       <br>
-      <input name="file" type="file" />
+      <input type="file" name="qrimage" accept="image/*" id="qrimage" class="form-control"/>
       <br>
-      <input class="btn btn-primary btn-success qrCodeSearch btn-block" name="submit" type="submit" value="Scan QR Code">
+      <input class="btn btn-primary btn-success qrCodeSearch btn-block" name="submit" type="submit" value="Decode QR Code">
     </form>
+<!--
+    <form action="decode.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="qrimage" accept="image/*" id="qrimage" class="form-control"><br>
+      <input type="submit" class="btn btn-md btn-block btn-danger" value="Decode the Code">
+    </form> -->
   </div>
 
 </div>

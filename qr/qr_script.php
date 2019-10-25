@@ -11,9 +11,10 @@
   $body = Unirest\Request\Body::multipart($data, $files);
   $response = Unirest\Request::post('http://api.qrserver.com/v1/read-qr-code/', $headers, $body);
 
-
-  $retrievedData = $decoded->body[0]->symbol[0]->data;
+  print_r($response);
+  print_r($response->body[0]->symbol[0]->data);
+  $retrievedData = $response->body[0]->symbol[0]->data;
 
   // Redirecting to another page.
-  header("location: info.php?specialKey=".$retrievedData);
+  // header("location: index.php?specialKey=".$retrievedData);
 ?>

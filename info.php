@@ -12,10 +12,15 @@
   <?php
     include_once 'php/navbar.php';
 
-    if(isset($_POST['qr_text'])){
+    if(isset($_POST['qr_text']) || isset($_GET['qr_img'])){
       // Getting data from input field.
-      $key = htmlspecialchars($_POST['qr_text']);
-
+      $key = "";
+      if (isset($_POST['qr_text'])) {
+        $key = htmlspecialchars($_POST['qr_text']);
+      }else {
+        $key = htmlspecialchars($_GET['qr_img']);
+        // echo gettype($key);
+      }
       // Including connection script.
       include 'php/db_connect.php';
 
@@ -44,7 +49,6 @@
           ];
 
           array_push($chain, $row['supply_chain']);
-
          }
 
          $pageInfo = '
@@ -85,7 +89,7 @@
         <p class="text-center">Product Information</p>
 
         <?php
-          if (isset($_POST['qr_text'])) {
+          if (isset($_POST['qr_text']) || isset($_GET['qr_img'])) {
             echo $pageInfo;
           }
         ?>
