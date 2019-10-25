@@ -8,7 +8,14 @@
 </head>
 
 <body>
-  <?php include_once 'php/navbar.php'; ?>
+  <?php
+    include_once 'php/navbar.php';
+    if (isset($_GET['msg'])) {
+      echo ' <div class="alert alert-success" role="alert">
+              '.$_GET['msg'].'
+            </div> ';
+    }
+  ?>
 
 <div id="wrapper">
   <p class="text-center header">

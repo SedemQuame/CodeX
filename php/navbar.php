@@ -22,5 +22,6 @@
     <a class="p-2 linkStyle" href="enquirer.php">Enquirer</a>
     <a class="p-2 linkStyle" href="aboutUs.php">About US</a>
     <a class="p-2 linkStyle" href="login.php">Login</a>
+    <a class="p-2 linkStyle" href="php/logout.php">Logout</a>
   </nav>
 </div>

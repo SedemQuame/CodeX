@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/dashboard.css">
   </head>
   <body>
-    <?php include_once 'php/navbar.php'; ?>
+    <?php include_once 'php/navbar.php' ?>
     <!-- Prototype of the user's page. -->
 
     <div class="row">

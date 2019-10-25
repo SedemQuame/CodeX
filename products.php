@@ -12,7 +12,8 @@
       <?php include 'php/dashboard_nav.php'; ?>
 
       <div id="displayPane" class="col-10 panes">
-
+        Display all product here, with a view button
+        to view the given information, about a product.
       </div>
   </body>
 </html>

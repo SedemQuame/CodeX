@@ -1,4 +1,5 @@
 <?php
+  session_start();
 // Getting data from the input fields.
   $itemName = $_POST['item_name'];
   $itemPrice = $_POST['item_price'];
@@ -30,7 +31,8 @@ $imgPath .= basename($fileName);
 $private_key = sha1($itemDescription);
 
 // Replace 3 with, user id, stored in the database.
-$chain = [3];
+$chain = [(int)$_SESSION['user_id']];
+print_r($chain);
 
 // Getting QR code data.
 $qr_code_url = 'https://api.qrserver.com/v1/create-qr-code/?data='.$private_key;
@@ -65,10 +67,10 @@ if (isset($_POST['submit'])) {
        $msg = "";
        if ($didUpload) {
            $msg .= "The file " . basename($fileName) . " has been uploaded";
-           // header("location: ".$msg);
+           // header("location: ../dashboard.php?msg=".$msg);
        } else {
            $msg .= "An error occurred somewhere. Try again";
-           // header("location: ".$msg);
+           // header("location:  ../dashboard.php?msg=".$msg);
        }
    } else {
        foreach ($errors as $error) {

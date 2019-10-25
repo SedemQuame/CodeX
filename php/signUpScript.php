@@ -33,7 +33,7 @@
     $stmt = $pdo->prepare($sql);
     $stmt->execute(array(':username' => $customerName, ':user_contact_info' => $customerContactInfo, ':BIN' => $BIN,
                          ':role' => $role , ':estimated_location' => $estimatedUserlocation, ':digital_address'=> $digitalAddress,
-                         ':registration_date'=> $date':password'=> $password));
+                         ':registration_date'=> $date, ':password'=> $password));
 
     // Get user id and store id into cookies.
     $sql = "SELECT user_id FROM traceability.user WHERE BIN=:BIN";

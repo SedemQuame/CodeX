@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <?php include_once 'php/header.php'; ?>
   <link rel="stylesheet" href="css/info.css">
+  <link rel="stylesheet" href="css/link.css">
 </head>
 
 <body>
@@ -95,12 +96,13 @@
         <?php
         $suppliers = [];
 
-        // print_r($chain[0][1]);
+        $chain = json_decode($chain[0]);
+        // print_r($chain);
           for ($i=0; $i < count($chain); $i++) {
             $sql = "SELECT * FROM traceability.user WHERE user_id = :id";
             $stmt = $pdo->prepare($sql);
 
-            $stmt->execute(array(':id' => 1));
+            $stmt->execute(array(':id' => $chain[$i]));
 
             $user = [];
 
@@ -114,11 +116,37 @@
                 'address' => $row['digital_address'],
                 'date' => $row['registration_date'],
               ];
+              array_push($suppliers, $user);
              }
-             array_push($suppliers, $user);
           }
+
           // print_r($suppliers);
-          // echo json_encode($suppliers);
+
+          $info = '<div class="accordion" id="accordionExample">';
+          for ($i=0; $i < count($suppliers); $i++) {
+            $info .= '
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse'.$i.'" aria-expanded="true" aria-controls="collapse'.$i.'">
+                    '.$suppliers[$i]['role'].'
+                  </button>
+                </h2>
+              </div>
+              <div id="collapse'.$i.'" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  '.$suppliers[$i]['bin'].'
+                </div>
+              </div>
+            </div>
+
+            <img class="link" src="assets/arrow.svg" alt="arrow">
+
+            ';
+          }
+          $info .= '</div>';
+          echo $info;
+
         ?>
       </div>
       <form class="" action="php/pdfPrint.php" method="post">
@@ -131,6 +159,10 @@
 
   <?php include_once 'php/footer.php'; ?>
   <script src="js/index.js" charset="utf-8"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
