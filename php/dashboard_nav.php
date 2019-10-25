@@ -2,11 +2,38 @@
   <div class="">
     <p>User information</p>
     <ul>
-      <?php // TODO: Add user image if possible ?>
-      <li class="text-left">User name</li>
-      <li class="text-left">User Role</li>
-      <li class="text-left">Email</li>
-      <li class="text-left">Phone Number</li>
+      <?php
+      session_start();
+      include 'php/db_connect.php';
+      if (isset($_SESSION['user_id'])) {
+        $id = $_SESSION['user_id'];
+        $sql = "SELECT username, role, user_contact_info, profile_url FROM `traceability`.`user` WHERE user_id = $id;";
+
+        $stmt = $pdo->prepare($sql);
+
+        $stmt->execute();
+
+        $results = [];
+        while ($row = $stmt->fetch(\PDO::FETCH_ASSOC)) {
+           $results = [
+            'name' => $row['username'],
+            'role' => $row['role'],
+            'info' => $row['user_contact_info'],
+            'url' => $row['profile_url']
+          ];
+        }
+
+        // print_r($results);
+
+        echo '
+          <li class="text-left">'.$results['name'].'</li>
+          <li class="text-left">'.$results['role'].'</li>
+          <li class="text-left">'.$results['info'].'</li>
+          <li class="text-left">'.$results['url'].'</li>
+        ';
+      }
+      ?>
+
     </ul>
   </div>
 

@@ -10,7 +10,9 @@
     <!-- Prototype of the user's page. -->
 
     <div class="row">
-      <?php include 'php/dashboard_nav.php'; ?>
+      <?php
+        include 'php/dashboard_nav.php';
+      ?>
 
       <div id="displayPane" class="col-10 panes">
         <p class="text-center sub-header">
