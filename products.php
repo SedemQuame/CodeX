@@ -8,12 +8,16 @@
   <body>
     <?php include_once 'php/navbar.php'; ?>
     <!-- Prototype of the user's page. -->
-    <div class="row">
+    <div id="wrapper" class="row">
       <?php include 'php/dashboard_nav.php'; ?>
 
-      <div id="displayPane" class="col-10 panes">
+      <div id="displayPane" class="col-9 panes">
         Display all product here, with a view button
+        <br>
         to view the given information, about a product.
       </div>
+
+      <?php include_once 'php/footer.php'; ?>
+      <script src="js/index.js" charset="utf-8"></script>
   </body>
 </html>

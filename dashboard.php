@@ -9,12 +9,12 @@
     <?php include_once 'php/navbar.php' ?>
     <!-- Prototype of the user's page. -->
 
-    <div class="row">
+    <div id="wrapper" class="row">
       <?php
         include 'php/dashboard_nav.php';
       ?>
 
-      <div id="displayPane" class="col-10 panes">
+      <div id="displayPane" class="col-9 panes">
         <p class="text-center sub-header">
           Add new items here.
         </p>

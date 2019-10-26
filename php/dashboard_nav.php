@@ -1,6 +1,6 @@
-<div id="NavPane" class="col-2 panes">
+<div id="NavPane" class="col-3 panes">
   <div class="">
-    <p>User information</p>
+    <p class="textStyle">User information</p>
     <ul>
       <?php
       session_start();
@@ -23,13 +23,11 @@
           ];
         }
 
-        // print_r($results);
-
         echo '
-          <li class="text-left">'.$results['name'].'</li>
-          <li class="text-left">'.$results['role'].'</li>
-          <li class="text-left">'.$results['info'].'</li>
-          <li class="text-left">'.$results['url'].'</li>
+          <li class="text-left textStyle">'.$results['name'].'</li>
+          <li class="text-left textStyle">'.$results['role'].'</li>
+          <li class="text-left textStyle">'.$results['info'].'</li>
+          <li class="text-left textStyle">'.$results['url'].'</li>
         ';
       }
       ?>

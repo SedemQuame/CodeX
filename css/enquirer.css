@@ -17,6 +17,9 @@
   margin: 2vh 40vw 7vh 40vw;
 }
 
+#wrapper{
+  margin-top: 100px;
+}
 
 .index-form-elements{
   height: 45px;

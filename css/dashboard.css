@@ -1,13 +1,25 @@
+body{
+  margin-top: -15px;
+}
+
+#NavPane{
+  background-color: #343A40;
+}
+
 .panes{
   min-height: 80vh;
 }
 
-#NavPane{
+.textStyle{
+  color: white;
+}
 
+#wrapper{
+  margin-top: 100px;
 }
 
 #displayPane{
-
+  /* margin-top: 60px; */
 }
 
 .list-group-item{
@@ -19,7 +31,11 @@ li{
 }
 
 li a{
-  color: black;
+  /* color: black; */
+}
+
+.list-group-item {
+background-color: #343A40;
 }
 
 #addItem{
