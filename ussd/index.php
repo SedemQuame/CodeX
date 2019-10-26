@@ -31,7 +31,9 @@ if ($text == "") {
 
 } else if($text == "1*1") {
     $response = "CON Registered Vegetable Items \n";
-    // $results = queryDB("Vegetables");
+    $response .= "1. Red Peppers (a686deb67a4f7e6483582b74adce7c60b2994f54)\n";
+    $response .= "2. Orange Carrot (aa0bf56a97444fba5f85721bef12b2994635447d)\n";
+    $response .= "3. Brocolli Veges (263c74af95b6b27b2df2c1ac334adb553b65cb56)\n";
 } else if($text == "1*2") {
     $response = "CON Registered Fruits Items \n";
     $response .= "1. Apples (8f700d8b89cf6ae6df18c4859135a8b2e01d6217)\n";
@@ -39,33 +41,37 @@ if ($text == "") {
 
     // printResults("Fruits");
 } else if($text == "1*3") {
-    $response = "CON Registered  Grain, Beans and Nuts Items \n";
-    $response .= "1. \n";
-    $response .= "2. \n";
-    $response .= "3. \n";
+    $response = "END Registered  Grain, Beans and Nuts Items \n";
+    $response .= "1. No results found.\n";
 
     // printResults("Grain, Beans and Nuts");
 } else if($text == "1*4") {
     $response = "CON Registered Meat and Poultry Items \n";
-    $response .= "1. \n";
-    $response .= "2. \n";
-    // printResults("Meat and Poultry");
+    $response .= "1. Roster Chicken (4cfa2d3f67aecb1f76280dd7aaff537a7c168ff3)\n";
+
 } else if($text == "1*5") {
     $response = "CON Registered Fish and Seafood Items \n";
-    $response .= "1. \n";
-    $response .= "2. \n";
-    $response .= "3. \n";
+    $response .= "1. Fish Product (1c100f75133a71356bfe8d7ee6ee121d3c76006b)\n";
+    $response .= "2. Fishy Fish 2 (b5d68766561cbc977518f980f6bcf6d0d172df29)\n";
   } else if($text == "1*6") {
     $response = "CON Registered Diary Product Items \n";
     // printResults("Diary Products");
-    $response .= "1. \n";
-    $response .= "2. \n";
-    $response .= "3. \n";
+    $response .= "1. Cheese1 (65e8b7529a098e2cd39a45de0a149a161bca6b49)\n";
+    $response .= "2. Yellow Milk(65e8b7529a098e2cd39a45de0a149a161bca6b49)\n";
 } else if($text == "1*7") {
-    $response = "CON Registered Processed Foods Items ";
+    $response = "CON Food Value Chain ";
     // printResults("Processed Food");    $response .= "1. \n";
     $response .= "2. \n";
     $response .= "3. \n";
+} else if($text == "1*1*1") {
+    $response = "END Value Chain Actors \n";
+    $response .= "1. Edward, Owusu";
+} else if($text == "1*2*1") {
+    $response = "END Value Chain Actors \n";
+    $response .= "1. Steven, Asomani)\n";}
+else if($text == "1*2*2") {
+   $response = "END Registered Fruits Items \n";
+   $response .= "1. Steven, Asomani -> beatrice, adjei -> Edward, Owusu)\n";
 }
 
 
