@@ -19,7 +19,6 @@
         $key = htmlspecialchars($_POST['qr_text']);
       }else {
         $key = htmlspecialchars($_GET['qr_img']);
-        // echo gettype($key);
       }
       // Including connection script.
       include 'php/db_connect.php';
@@ -132,14 +131,19 @@
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse'.$i.'" aria-expanded="true" aria-controls="collapse'.$i.'">
-                    '.$suppliers[$i]['role'].'
+                  <button class="text-center btn btn-link" type="button" data-toggle="collapse" data-target="#collapse'.$i.'" aria-expanded="true" aria-controls="collapse'.$i.'">
+                    Role: '.$suppliers[$i]['role'].'
                   </button>
                 </h2>
               </div>
               <div id="collapse'.$i.'" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  '.$suppliers[$i]['bin'].'
+                <div class="text-center card-body">
+                  <b>B.I.N:</b> '.$suppliers[$i]['bin'].'<br />
+                  <b>Username:</b> '.$suppliers[$i]['name'].'<br />
+                  <b>Contact Info:</b> '.$suppliers[$i]['contact'].'<br />
+                  <b>Location:</b> '.$suppliers[$i]['location'].'<br />
+                  <b>Digital Address:</b> '.$suppliers[$i]['address'].'<br />
+                  <b>D.O.R:</b> '.$suppliers[$i]['date'].'
                 </div>
               </div>
             </div>

@@ -5,5 +5,7 @@ form{
 
 #wrapper{
   padding-top: 4vh;
-  height: 65vh;
+  min-height: 65vh;
+  margin-top: 110px;
+  margin-bottom: 30px;
 }

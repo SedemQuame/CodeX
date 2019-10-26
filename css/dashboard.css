@@ -53,3 +53,10 @@ background-color: #343A40;
   margin-bottom: 2%;
   margin-top: -2%;
 }
+
+.statusCheck{
+  width: 80px;
+  height: 80px;
+  margin: 0 40%;
+  margin-top: 55px;
+}

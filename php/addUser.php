@@ -54,10 +54,9 @@
     $stmt->execute(array(':chain' => json_encode($arrayOfUsers), ':id' => 3));
 
     $msg = "User Successfully Added To Product Supply Chain";
+    header("location: ../chainStatus.php?msg=".$msg);
   }else {
     $msg = "Failed To Add User To Supply Chain.";
+    header("location: ../chainStatus.php?msg=".$msg);
   }
-
-  header("location: ../chainStatus.php?msg=".$msg);
-
 ?>

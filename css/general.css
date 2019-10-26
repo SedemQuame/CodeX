@@ -24,3 +24,21 @@
 .logo{
   height: 60px;
 }
+
+.alert{
+  margin-top: 85px;
+}
+
+.msg{
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  height: 35vh;
+  margin-top: 20vh;
+  display: inline-block;
+  text-align: left;
+}
+
+.msgText{
+  margin-top: 10px;
+  font-size: 24px;
+}

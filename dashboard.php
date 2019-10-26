@@ -43,7 +43,7 @@
               <option value="Grain, Beans and Nuts">Grain, Beans and Nut</option>
               <option value="Meat and Poultry">Meat and Poultry</option>
               <option value="Fish and Seafood">Fish and Seafood</option>
-              <option value="Diary Food">Diary Food</option>
+              <option value="Diary Products">Diary Products</option>
               <option value="Processed Food">Processed Food</option>
             </select>
           </div>
