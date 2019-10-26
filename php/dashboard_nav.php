@@ -1,6 +1,6 @@
 <div id="NavPane" class="col-3 panes">
   <div class="">
-    <p class="textStyle">User information</p>
+    <p class="text-center textStyle">User information</p>
     <ul>
       <?php
       session_start();
@@ -23,11 +23,19 @@
           ];
         }
 
+        // print_r($results['url']);
+        if($results['url'] != null){
+          echo '<li class="text-left textStyle">
+                  <img class="profile_img" src="'.$results['url'].'" alt=""/>
+                </li>';
+        }else{
+
+        }
+
         echo '
-          <li class="text-left textStyle">'.$results['name'].'</li>
-          <li class="text-left textStyle">'.$results['role'].'</li>
-          <li class="text-left textStyle">'.$results['info'].'</li>
-          <li class="text-left textStyle">'.$results['url'].'</li>
+          <li class="text-center textStyle">'.$results['name'].'</li>
+          <li class="text-center textStyle">'.$results['role'].'</li>
+          <li class="text-center textStyle">'.$results['info'].'</li>
         ';
       }
       ?>
@@ -37,13 +45,13 @@
 
 
   <ul class="list-group">
-    <li class="list-group-item">
+    <li class="list-group-item text-center">
       <a href="dashboard.php">Home</a>
     </li>
-    <li class="list-group-item">
+    <li class="list-group-item text-center">
       <a href="connections.php">Connections</a>
     </li>
-    <li class="list-group-item">
+    <li class="list-group-item text-center">
       <a href="products.php">Products</a>
     </li>
   </ul>
